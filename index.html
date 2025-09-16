@@ -1,0 +1,281 @@
+
+<!DOCTYPE html><html lang="ko"><head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
+  <meta property="og:title" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="/"/>
+  <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+  <meta name="description" content="자차 보험료 계산과 절약 방법, 자동차 보험 비교 등 자차 보험료 관련 모든 정보를 제공합니다." />
+  
+  <meta itemprop="description" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기"/>
+  <meta name="twitter:url" content="/"/>
+  <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+  <meta name="twitter:description" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기"/>
+  
+  <meta name="robots" content="index,nofollow" />
+  <meta name="NaverBot" content="index,nofollow" />
+  <meta name="Yeti" content="index,nofollow" />
+  <meta name="googlebot" content="index,nofollow" />
+  
+  <meta name="subject" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기" />
+  <meta name="publisher" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기" />
+  <meta name="Other Agent" content="자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기" />
+  <meta name="location" content="South Korea" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+  <meta itemprop="name" content="" />
+  
+    <link rel="stylesheet" href="./Img/reset.css">
+    <link rel="stylesheet" href="./Img/main.css">
+    <link rel="stylesheet" href="./common/swiper.css" />
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.serializeObject.min.js"></script>
+    <script src="./json3.min.js"></script>
+    <script src="./bxslider.js" type="text/javascript"></script>
+    <script src="./common/moment.min.js"></script>
+  
+  
+  <title>자차 보험료 절약 가이드 | 할증 인상 및 상승 조회 계산기</title>
+  
+  <meta name="next-head-count" content="25"/>
+  <meta name="format-detection" content="telephone=no"/>
+  
+  
+  
+  
+<style>
+  /* 기본 스타일 */
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f9fafd;
+    color: #333;
+    margin: 0; padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #a3d8f4;
+    color: #023e8a;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 4px solid #0077b6;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  h1, h2, h3 {
+    color: #0077b6;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  section {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  /* 인풋 스타일 */
+  input[type="number"], input[type="text"], select, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin: 0.3rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button {
+    background-color: #0077b6;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #023e8a;
+  }
+  /* 결과 박스 */
+  .result-box {
+    background-color: #caf0f8;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #03045e;
+    margin-top: 1rem;
+  }
+  /* FAQ 스타일 */
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+  .faq-question {
+    font-weight: 600;
+    cursor: pointer;
+    color: #0077b6;
+  }
+  .faq-answer {
+    display: none;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+  }
+  /* 외부링크 */
+  .external-links a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+  .external-links a:hover {
+    text-decoration: underline;
+  }
+  /* 반응형 */
+  @media (max-width: 600px) {
+    main {
+      padding: 0 1rem;
+    }
+  }
+</style>
+<script>
+  // FAQ 토글
+  document.addEventListener('DOMContentLoaded', () => {
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+      });
+    });
+  });
+
+  // 간단 자차 보험료 계산기 함수 예시
+  function calculateInsurance() {
+    const vehicleValue = Number(document.getElementById('vehicleValue').value);
+    const coverage = document.getElementById('coverageType').value;
+    const driverAge = Number(document.getElementById('driverAge').value);
+    let baseRate = 0;
+
+    if (isNaN(vehicleValue) || vehicleValue <= 0) {
+      alert('자동차 가액을 올바르게 입력해주세요.');
+      return;
+    }
+    if (driverAge < 18) {
+      alert('운전자 나이를 정확히 입력해주세요.');
+      return;
+    }
+
+    // 기본 계산 로직 (예시)
+    baseRate = vehicleValue * 0.015; // 기본 1.5% 보험료
+
+    if (coverage === 'full') baseRate *= 1.2;
+    if (driverAge < 25) baseRate *= 1.3;
+    else if (driverAge > 60) baseRate *= 1.1;
+
+    document.getElementById('result').textContent = `예상 자차 보험료: ${baseRate.toLocaleString()}원 (연간)`;
+  }
+</script>
+</head>
+<body>
+<header>
+  자차 보험료 계산 및 절약 가이드
+</header>
+<main>
+  <section>
+    <h1>자차 보험료란?</h1>
+    <p>자차 보험료는 자동차보험에서 자기 차량에 발생하는 손해를 보상받기 위해 납부하는 보험료를 말합니다. 사고 발생 시 본인의 차량 수리비를 보험사로부터 지원받을 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>자차 보험료 산출 방식</h2>
+    <p>자차 보험료는 자동차 가액, 운전자 연령, 운전 경력, 가입 보험사의 정책에 따라 달라집니다. 기본적으로 차량 가격의 일정 비율로 산정하며, 추가 담보 선택 및 할인 조건에 따라 조정됩니다.</p>
+  </section>
+
+  <section>
+    <h2>자차 보험료 절약 방법</h2>
+    <ul>
+      <li>무사고 기간 유지로 할인 혜택 받기</li>
+      <li>다양한 보험사 견적 비교 후 가입</li>
+      <li>운전자 연령 및 경력에 따른 맞춤 할인 적용</li>
+      <li>필요한 담보만 선택하여 비용 절감</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>자차 보험료 계산기</h2>
+    <form onsubmit="event.preventDefault(); calculateInsurance();">
+      <label for="vehicleValue">자동차 가액 (만원):</label>
+      <input type="number" id="vehicleValue" name="vehicleValue" placeholder="예: 2000" min="100" required />
+
+      <label for="coverageType">보장 범위 선택:</label>
+      <select id="coverageType" name="coverageType" required>
+        <option value="basic">기본</option>
+        <option value="full">전면 보장</option>
+      </select>
+
+      <label for="driverAge">운전자 나이:</label>
+      <input type="number" id="driverAge" name="driverAge" placeholder="예: 30" min="18" required />
+
+      <button type="submit">보험료 계산하기</button>
+    </form>
+    <div class="result-box" id="result" aria-live="polite"></div>
+  </section>
+
+  <section>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <div class="faq-item">
+      <div class="faq-question">자차 보험료는 어떻게 할인받을 수 있나요?</div>
+      <div class="faq-answer">무사고 기간 유지, 다이렉트 보험 가입, 가족 할인 등을 통해 할인 혜택을 받을 수 있습니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">자차 보험 가입 시 유의할 점은?</div>
+      <div class="faq-answer">보장 범위와 면책금, 보험료 수준을 꼼꼼히 비교하고 자신의 운전 습관과 차량 상태에 맞게 선택해야 합니다.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>관련 외부 링크</h2>
+    <ul class="external-links">
+      <li><a href="https://namu.wiki/w/자동차%20보험" target="_blank" rel="noopener noreferrer">나무위키 자동차 보험</a></li>
+      <li><a href="https://www.fss.or.kr/fss/kr/promo/insurance/auto.jsp" target="_blank" rel="noopener noreferrer">금융감독원 자동차보험 안내</a></li>
+      <li><a href="https://www.knia.or.kr/auto_insurance/" target="_blank" rel="noopener noreferrer">손해보험협회 자동차보험 정보</a></li>
+      <li><a href="https://www.data.go.kr/data/15007225/fileData.do" target="_blank" rel="noopener noreferrer">공공데이터 포털 자동차보험 통계</a></li>
+      <li><a href="https://www.youtube.com/results?search_query=자동차보험+자차보험료+계산" target="_blank" rel="noopener noreferrer">관련 동영상 검색</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>문의하기</h2>
+    <form>
+      <label for="userName">이름:</label>
+      <input type="text" id="userName" name="userName" placeholder="이름을 입력하세요" required />
+      <label for="userEmail">이메일:</label>
+      <input type="text" id="userEmail" name="userEmail" placeholder="이메일을 입력하세요" required />
+      <label for="userQuestion">문의 내용:</label>
+      <textarea id="userQuestion" name="userQuestion" rows="4" placeholder="문의 내용을 입력하세요" required></textarea>
+      <button type="submit">문의 보내기</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
+
+  
